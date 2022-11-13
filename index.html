@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional CSS -->
+  <!-- JQuerry CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>OLX - Buy and Sell for free anywhere in Pakistan with OLX online classified</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #preloader {
+      width: 100% !important;
+      height: 100% !important;
+      background: #fff url("IMG/1_CsJ05WEGfunYMLGfsT2sXA.gif");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      z-index: 999999999;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body class="w-100" onload="showAds()">
+  <!-- Header -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light " id="top-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html"><img src="img/Capture-removebg-preview.png" width="60px"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="main-header">
+          <li class="nav-item">
+            <!-- Actual search box -->
+            <div class="form-group has-search position-relative">
+              <span class="fa fa-search form-control-feedback position-absolute"></span>
+              <input type="text" class="form-control form-input" placeholder="Pakistan, Karachi">
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="form-group has-search">
+              <input type="text" class="form-control form-input find-car"
+                placeholder="Find Cars, Mobile Phones and more...">
+            </div>
+          </li>
+          <!-- Button trigger modal -->
+          <li class="nav-item d-flex align-items-center">
+            <button type="button" class="btn login-link" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@mdo" id="header-login">Login</button>
+          </li>
+
+          <li class="nav-item d-flex align-items-center">
+            <button  type="button" class="btn login-link" data-toggle="modal" data-target="#exampleModal"
+              data-whatever="@mdo" id="chatPage" onclick="goToChatroom()">Chatroom</button>
+          </li>
+          <!-- Modal -->
+
+          <li class="nav-item d-flex align-items-center">
+            <button class="btn sell-btn sell" id="selling-btn">Sell</button>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-white custom-navbar w-100 " id="bottom-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 container-fluid text-left">
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Mobile Phones</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Motorcycles</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Houses</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">TV-Video-Audio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Tablets</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link">Land & Plots</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- login and signup screen  -->
+
+
+
+  <div id="main-section" class="">
+
+    <!-- Section Banner -->
+    <section id="banner" class="w-100">
+      <div class="bg-banner"></div>
+    </section>
+    <!-- Ads Section -->
+
+    <!-- Featured Section -->
+    <section id="featured w-100">
+      <div class="container pb-5" style="min-height: 60vh; border-radius: 10px; position: relative;">
+        <div id="preloader"></div>
+
+        <div class="featured-head d-inline">
+          <h3 class="featured-heading">Latest Post</h3>
+        </div>
+        <div class="card-deck card-container row" id="post-section">
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Second Ads Section -->
+
+
+    <!-- Footer Banner -->
+    <section id="footer-banner" class="pt-5 mt-5 ">
+      <div class="footer-banner-bg"></div>
+    </section>
+
+  </div>
+
+
+  <!-- form area  -->
+
+
+
+  <!-- detail section  -->
+
+
+
+
+
+
+  <!-- active user profile section   -->
+
+  <div id="profile-sec" style="cursor: pointer;">
+
+  </div>
+
+
+
+  <div id="footer">
+    <!-- Footer Nav Section -->
+    <section id="footer-nav" class="">
+      <div class="container-fluid footer-navbar-container w-100">
+        <div class="row footer-nav">
+          <div class="col">
+            <div class="nav footer-navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p class="footer-nav-col-heading">Popular Categories</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Cars</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Flats for rent</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Mobile Phones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="nav footer-navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p class="footer-nav-col-heading">Trending Searches</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Watches</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Dogs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="nav footer-navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p class="footer-nav-col-heading">About Us</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About OLX Group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">OLX Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">OLX for Business</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="nav footer-navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p class="footer-nav-col-heading">OLX</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sitemap</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link legal-information">Ldiegal & Privacy information</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-follow-us">
+              <p class="footer-nav-col-heading">Follow Us</p>
+              <div class="link" style="float: left;"><i class="fab fa-youtube social-icon youtube"></i> <i
+                  class="fab fa-facebook facebook social-icon"></i> <i class="fab fa-twitter twitter social-icon"></i><i
+                  class="fab fa-instagram instagram social-icon"></i></div>
+              <div class="download-pics">
+                <img src="./IMG/appstore.webp" alt="">
+                <img src="./IMG/playstore.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="w-100">
+      <div class="container d-flex justify-content-between">
+        <div class="countries-container" style="width: 35%;">
+          <div class="countries"> <span class="font-weight-bold">Other Countries</span>&nbsp; India - South Africa -
+            Indonesia</div>
+        </div>
+        <div class="copyright-container d-flex" style="width: 35%; position: absolute; right: 0;">
+          <div class="pakistan font-weight-bold">Free Classified in Pakistan &nbsp;</div>
+          <div class="copyright">. &copy; 2006-2021 OLX</div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+
+
+  <!-- Popper.js First, then Bootstrap JS -->
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="firebase/firebase.js"></script>
+
+
+
+
+
+  <script>
+
+    var preloader = document.getElementById("preloader");
+
+    setTimeout(() => {
+      const box = document.getElementById('box');
+
+      // 👇️ removes element from DOM
+      preloader.style.display = "none";
+
+      // 👇️ hides element (still takes up space on page)
+      // box.style.visibility = 'hidden';
+    }, 2000);
+
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional CSS -->
+    <!-- JQuerry CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Post Form</title>
+</head>
+
+<body>
+
+    
+      <!-- adform  -->
+
+    
+    <section class="vh-100 bg-image" id="ad-form">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card shadow-lg" style="border-radius: 15px;">
+                          <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-3">Ad Information</h2>
+  
+                                <form>
+  
+                                    <div class="form-outline mb-2">
+                                        <label class="form-label" for="fullName">Product Name</label>
+                                        <input type="text" id="product-name" class="form-control form-control-lg" />
+                                    </div>
+  
+                                    <div class="form-outline mb-2">
+                                        <label class="form-label" for="userEmail">Product Price</label>
+                                        <input type="email" id="product-price" class="form-control form-control-lg" />
+                                    </div>
+  
+                                    <div class="form-outline mb-2">
+                                        <label class="form-label" for="imgURL">Product Description</label>
+                                        <input type="text" id="product-desc" class="form-control form-control-lg" />
+                                    </div>
+  
+  
+                                    <div class="form-outline mb-2">
+                                        <label class="form-label" for="userPsw">Image URL</label>
+                                        <input type="file" id="product-img" class="form-control form-control-lg" />
+                                    </div>
+  
+  
+                                    <div class="d-flex justify-content-center">
+                                        <button onclick="adPost()" type="button"
+                                            class="btn-primary btn w-100 btn-lg"
+                                            id="add-post">Add Post</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    
+    <script type="module" src="../firebase/firebase.js"></script>
+    <script type="module" src="ad-form.js"></script>
+
+
+</body>
+
+</html>

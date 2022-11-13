@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Optional CSS -->
+        <!-- JQuerry CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" href="../css/style.css">
+    
+        <title>Signup/Login</title>
+    </head>
+<body>
+    
+
+    <div id="signup-screen">
+        <section class="bg-image pt-5 pb-5">
+            <div class="mask d-flex align-items-center gradient-custom-3 pt-5 pb-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center h-100 mt-5">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="card shadow-lg" style="border-radius: 15px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-3">Create an account</h2>
+  
+                                    <form>
+  
+                                        <div class="form-outline mb-2">
+                                            <label class="form-label" for="fullName">Your Full Name</label>
+                                            <input type="text" id="userName" class="form-control form-control-lg" />
+                                        </div>
+  
+                                        <div class="form-outline mb-2">
+                                            <label class="form-label" for="userEmail">Your Email</label>
+                                            <input type="email" id="userEmail" class="form-control form-control-lg" />
+                                        </div>
+  
+                                        <div class="form-outline mb-2">
+                                          <label class="form-label" for="userPsw">Phone</label>
+                                          <input type="number" id="userPhone" class="form-control form-control-lg" />
+                                      </div>
+  
+                                        <div class="form-outline mb-2">
+                                            <label class="form-label" for="userPsw">Password</label>
+                                            <input type="password" id="userPsw" class="form-control form-control-lg" />
+                                        </div>
+  
+  
+  
+                                        <div class="d-flex justify-content-center">
+                                            <button onclick="signup()" type="button"
+                                                class="btn btn-primary btn-lg w-100"
+                                                id="register-btn">Register</button>
+                                        </div>
+  
+                                        <p class="text-center text-muted mt-3 mb-0">Have already an account? <a
+                                                href="#" id="show-login-sc"
+                                                class="fw-bold text-body cursor-pointer"><u>Login
+                                                    here</u></a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+  
+  
+    <div id="login-screen">
+        <section class="bg-image pt-5 pb-5">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3 pt-5 pb-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="card shadow-lg" style="border-radius: 15px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-3">Login account</h2>
+  
+                                    <form>
+  
+                                        <div class="form-outline mb-2">
+                                            <label class="form-label" for="regis-email">Your Email</label>
+                                            <input type="email" id="regis-email" class="form-control form-control-lg" />
+                                        </div>
+  
+                                        <div class="form-outline mb-2">
+                                            <label class="form-label" for="regis-psw">Password</label>
+                                            <input type="password" id="regis-psw"
+                                                class="form-control form-control-lg" />
+                                        </div>
+  
+  
+  
+                                        <div class="d-flex justify-content-center">
+                                            <button onclick="signin()" type="button"
+                                                class="btn btn-primary btn-lg w-100"
+                                                id="login-btn">Login</button>
+                                        </div>
+  
+                                        <p class="text-center text-muted mt-3 mb-0">Do not have account? <a href="#"
+                                                id="show-signup-sc" class="fw-bold text-body cursor-pointer"><u>Sign Up
+                                                    here</u></a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+  
+  
+  
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="../firebase/firebase.js"></script>
+
+</body>
+</html>
